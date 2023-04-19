@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Scheduling Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+    <div class="card">
+        <div class="form__name">
+            Appointment For Blood Test
+        </div>
+        <div class="time__container">
+            <div class="section">
+                <div class="box">
+                    1
+                </div><span>Date &amp; Time</span>
+            </div>
+            <form action="" class="form__time">
+                <div class="date">
+                    <label for="date">Date</label> <input id="date" type="date" required>
+                </div>
+                <div class="time">
+                    <label for="time">Time</label> <input id="time" type="time" required>
+                </div>
+                
+            </form>
+        </div>
+        <div class="message__container">
+            <div class="section">
+                <div class="box">
+                    2
+                </div><span>Your Message</span>
+            </div>
+            <textarea placeholder="e.g. Please do .. Also, .." cols="50" rows="5"></textarea>
+        </div>
+        <div class="contact__container">
+            <div class="section">
+                <div class="box">
+                    3
+                </div><span>Contact Information</span>
+            </div>
+            <form action="" class="form__contact">
+                <div class="cname">
+                    <label for="cname">Name</label> <input placeholder="e.g. Virat Kohli" id="cname" type="text" required>
+                </div>
+                <div class="cnum">
+                    <label for="cnum">Phone Number</label> <input id="cnum" type="tel" maxlength="10" pattern = "[0-9]{10}"required>
+                </div>
+                <div class="email">
+                    <label for="cemail">Email</label> <input placeholder="e.g. rb@email.com" id="cemail" type="email"required>
+                </div>
+            </form>
+        </div>
+        <div class="form__confirmation">
+            <button>Confirm Information</button>
+        </div>
+    </div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
